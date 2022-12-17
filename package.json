@@ -4,7 +4,7 @@
   "license": "MIT",
   "private": true,
   "scripts": {
-    "dev": "nx run --target=dev",
+    "dev": "nx run-many --target=dev",
     "format": "nx run-many --target=format",
     "lint": "nx run-many --target=lint",
     "build": "nx run-many --target=build"
