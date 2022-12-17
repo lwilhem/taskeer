@@ -1,0 +1,14 @@
+{
+  "name": "taskeer-monorepo",
+  "version": "1.0.0",
+  "license": "MIT",
+  "private": true,
+  "devDependencies": {
+    "prettier": "^2.8.1",
+    "nx": "15.3.3",
+    "@nrwl/nx-cloud": "latest"
+  },
+  "dependencies": {
+    "eslint": "^8.30.0"
+  }
+}
