@@ -3,12 +3,16 @@
   "version": "1.0.0",
   "license": "MIT",
   "private": true,
+  "scripts": {
+    "dev": "nx run --target=dev",
+    "format": "nx run-many --target=format",
+    "lint": "nx run-many --target=lint",
+    "build": "nx run-many --target=build"
+  },
   "devDependencies": {
     "@nrwl/nx-cloud": "^15.0.2",
+    "eslint": "^8.30.0",
     "nx": "15.3.3",
     "prettier": "^2.8.1"
-  },
-  "dependencies": {
-    "eslint": "^8.30.0"
   }
 }
