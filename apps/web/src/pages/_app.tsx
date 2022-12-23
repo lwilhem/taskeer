@@ -7,14 +7,13 @@ import { useState } from 'react'
 export default function TaskeerWebapp({
   Component,
   pageProps
-}: AppProps<{ initialSession: Session }>) {
-  const [supabaseClient] = useState(() => createBrowserSupabaseClient())
+}: AppProps<{
+  initialSession: Session
+}>) {
+  const [supabase] = useState(() => createBrowserSupabaseClient())
 
   return (
-    <SessionContextProvider
-      supabaseClient={supabaseClient}
-      initialSession={pageProps.initialSession}
-    >
+    <SessionContextProvider supabaseClient={supabase} initialSession={pageProps.initialSession}>
       <Component {...pageProps} />
     </SessionContextProvider>
   )
